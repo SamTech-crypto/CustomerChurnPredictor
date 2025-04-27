@@ -98,7 +98,7 @@ def main():
     st.markdown("""
         <style>
             body {
-                background-color: #f0f0f5;  # Change this to your desired background color
+                background-color: #f0f0f5;  # Set your background color here
             }
             .css-18e3th9 {
                 background-color: #343a40;  # Sidebar background color
