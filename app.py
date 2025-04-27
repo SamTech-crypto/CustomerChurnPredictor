@@ -22,9 +22,6 @@ nltk.download('vader_lexicon', quiet=True)
 # Initialize sentiment analyzer
 sid = SentimentIntensityAnalyzer()
 
-# Password for authentication (store it securely, not hardcoded in production)
-PASSWORD = "your_password"  # Change this to your desired password
-
 # Simulated customer data (replace with real data in production)
 def generate_sample_data(n=1000):
     np.random.seed(42)
@@ -115,13 +112,6 @@ def main():
         </style>
     """, unsafe_allow_html=True)
 
-    # Password authentication
-    password = st.text_input("Enter Password", type="password")
-    
-    if password != PASSWORD:
-        st.error("Incorrect password. Please try again.")
-        return  # Prevent access to the rest of the app
-    
     st.title("AI-Driven Customer Retention Engine")
     st.sidebar.header("Controls")
     
