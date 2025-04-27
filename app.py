@@ -22,7 +22,7 @@ nltk.download('vader_lexicon', quiet=True)
 # Initialize sentiment analyzer
 sid = SentimentIntensityAnalyzer()
 
-# Password for authentication
+# Password for authentication (store it securely, not hardcoded in production)
 PASSWORD = "your_password"  # Change this to your desired password
 
 # Simulated customer data (replace with real data in production)
@@ -97,6 +97,24 @@ def analyze_sentiment(feedback):
 
 # Streamlit Dashboard
 def main():
+    # Set custom background color
+    st.markdown("""
+        <style>
+            body {
+                background-color: #f0f0f5;  # Change this to your desired background color
+            }
+            .css-18e3th9 {
+                background-color: #343a40;  # Sidebar background color
+            }
+            .css-1v3fvcr {
+                background-color: #007bff;  # Button background color
+            }
+            .css-12yvxg3 {
+                color: #ffffff;  # Title color
+            }
+        </style>
+    """, unsafe_allow_html=True)
+
     # Password authentication
     password = st.text_input("Enter Password", type="password")
     
