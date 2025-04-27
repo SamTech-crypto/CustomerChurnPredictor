@@ -1,0 +1,38 @@
+# Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Streamlit-specific files
+*.db
+*.csv
+*.xlsx
+*.log
+*.sqlite
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sensitive files like SMTP credentials (do not push these to GitHub)
+secrets.json
+config.json
+
+# Miscellaneous
+*.bak
+*.tmp
+*.swp
+*.swo
